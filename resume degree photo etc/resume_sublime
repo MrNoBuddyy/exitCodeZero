@@ -1,0 +1,34 @@
+ETL Tool
+--storage account
+integration of storage accounts like azure GCP and AWS s3 as databse sources for tool.
+--file system
+desigmed and implemented the file sytem automation feature that lists the blobs from storage account and migrate the valid blob to new destination.
+--loop feature
+enhancement of the prexisting ETL with the iteration functionality with also enables user to dynamicaly replace the variables.
+--Column rename
+Column rename feature in the ETL tool which enables the user to rename the column names in various formats with prefix postfix and regular expressiosn
+--fork function
+feature addition of join/union/intersection with the help of recursive function that allows user to read multiple databases in one go and simplifies the task.
+
+
+SPARK libs and data migration
+--structured treaming
+added the spark streaming for the live streaming of data wiich removes the latency of minutes to the nearly real time data processing. 
+--k8s & yaml
+spark jobs configuration with yaml file in kubernetes cluster  memory driver executers and various dynamic espects 
+--other features
+worked on various features like filter, parsing, dml execution, repartition etc.
+
+
+
+
+Neo4j Data Base
+
+implemented a topological graph with the help of Cypher query language that executed over 80 million data entries every day.
+reading data from elastic search into spark dataframe applying spark sql joins and writing it to neo4j data base. 
+for performance tuning used spark sql aggregation improved data quality to execute the flow over 80 million entries every day 
+
+
+Light Weight ETL
+Improving the resource utilisation with a new tool creation  for small level data migration at client premises.
+replication of the Scala Spark ETL tool into python module that runs on local system and effieient for small data migrations 

@@ -1,0 +1,18 @@
+case class Rectangle(val width:Double,val height:Double){
+  def this(width:Double) {  //constructor will create a rectangle which has height same as it's width
+    this(width,width)
+  }
+
+  def area(): Double = {
+    val ans = width * height
+    ans
+  }
+}
+object caseClass{
+  def main(args: Array[String]): Unit = {
+    val rectangle1=new Rectangle(3,4.2)
+    val squire=new Rectangle(1.414)
+    println(rectangle1.area())
+    println(squire.area())
+  }
+}

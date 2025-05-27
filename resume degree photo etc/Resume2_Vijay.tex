@@ -1,0 +1,201 @@
+%-------------------------
+% Resume in Latex
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\usepackage{xcolor}
+
+\pagecolor[rgb]{1,1,1} %black
+
+\color[rgb]{0.1,0.1,0.1} %grey
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeSubSubheadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubSubheadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+
+
+\begin{center}
+    \textbf{\Huge \scshape Vijay Kumar } \\ \vspace{5pt}
+    \small+91 8239886299$|$ \href{mailto:vijayk30606@gmail.com}{\underline{E-Mail}} $|$ 
+    \href{https://www.linkedin.com/in/vijay-kumar-6a32101b1}{\underline{LinkedIn}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute of Technology, Delhi}{7.03/10}
+      {Bachelor of Technology in Electrical Engineering}{July 2019 -- 2023}
+    \resumeSubheading
+      {Vidhur Navodya Sr Sec School, Kota}{87.00 \%}
+      {Class XII}{April 2017 -- April 2018}
+  \resumeSubHeadingListEnd
+
+
+
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+          {\textbf{Software Engineer} $|$ \emph{Jio Platforms Limited, Mumbai}}{Aug 2023 - Present}
+        \resumeSubSubheading{\textbf{ Extract Transform Load Tool}}{}
+          \resumeItemListStart
+            \resumeItem{Connectors integration of storage accounts Azure, GCP bucket and AWS s3 as database sources}
+            \resumeItem{Iteration functionality feature enhancement which also enables user to dynamically replace the variables}
+            \resumeItem{Column rename feature which enables the user to rename the Data Frame column names with prefix, post-fix, date-time stamp and regular expressions}
+            \resumeItem{Feature of join/union/intersection integration with the help of recursive function that allows user to read multiple databases in one job and increased the automation resources efficiency}
+          \resumeItemListEnd
+        \resumeSubSubheading{\textbf{ Spark Libraries and Kubernetes Jobs}}{}
+          \resumeItemListStart
+           \resumeItem{Implemented the Spark streaming classes for the live streaming of data which removes the latency of minutes to the nearly real time data processing}
+           \resumeItem{Configured Spark jobs using YAML files in a Kubernetes cluster, optimizing driver and executor memory settings and leveraging dynamic resource allocation for efficient processing}
+            \resumeItem{Apache Spark libraries and functions for data parsing, filtering, DML execution, repartitioning and utilized SparkSession and SparkContext for optimized data processing}
+          \resumeItemListEnd 
+        \resumeSubSubheading{\textbf{ Neo4J Graph Database}}{}
+          \resumeItemListStart
+           \resumeItem{Designed a topological graph setting properties of nodes and relationships with the help of Cypher query language}
+           \resumeItem{ Created and deployed Spark job on Kubernetes cluster for reading data from ElasticSearch into Spark Dataframe and writing it to Neo4J data base}
+            \resumeItem{Performance tuning of Spark Job using aggregation functions, improved data quality and resource optimisation for processing over 80 million entries every day}
+          \resumeItemListEnd
+        \resumeSubSubheading{\textbf{ Light Weight ETL}}{}
+          \resumeItemListStart
+           \resumeItem{Optimised resource utilisation with new ETL tool design implementation  for small data processing}
+           \resumeItem{Replication of the Scala Spark ETL tool into python module that runs on local system  efficiently}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-----------projects-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+    
+         \resumeProjectHeading
+         {\textbf{Dynamic Memory Allocator} $|$ \emph{Prof. Rahul Garg} $|$ \emph{Course Project}}{2020}
+          \resumeItemListStart
+            \resumeItem{Developed an efficient JAVA based system to allocate/free memory as per requirement using linked lists and trees}
+            \resumeItem{Implemented Doubly Linked List data structure using First Split Fit algorithm to track free and allocated memory}
+            \resumeItem{Implemented Best Split Fit algorithm to optimally perform allocate and free operations while minimizing fragmentation}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{ Graph Topology Analysis} $|$ \emph{Prof. Rahul Garg} $|$ \emph{Course Project}}{2020}
+          \resumeItemListStart
+            \resumeItem{Implemented bi-directed graph using two csv files having data regarding storylines of characters in Marvel comics.}
+            \resumeItem{Implemented DFS on the graph to generate independent storylines by utilizing Hash-Map and Array-List data structures}
+                \resumeItemListEnd
+          \resumeItemListEnd
+    
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C++, Scala, SQL, Cypher, Python, Java,  Matlab} \\ \vspace{3pt}
+ 
+     \textbf{Softwares, Libraries, Tools, and Frameworks}{: Spark Core, Spark SQL, Spark Streaming, Neo4J, SQLDeveloper, Kubernetes, Kafka, ElasticSearch, Git/GitHub, VS Code, IntelliJ, MATLAB, Overleaf, Microsoft Office}
+
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+
+  
+  
+\end{document}

@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "vector": "cpp"
+    },
+    "java.compile.nullAnalysis.mode": "automatic"
+}
